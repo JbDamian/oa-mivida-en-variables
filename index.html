@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Historia en Variables</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una aventura para descubrir qué son las variables: creá un personaje, sumale habilidades y cambiá sus datos. Objeto de aprendizaje de programación inicial.">
+  <meta name="theme-color" content="#252039">
+  <title>Mi Historia en Variables | Una aventura para aprender</title>
+  <link rel="icon" type="image/svg+xml" href="imagenes/simbolo.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Mi Historia en Variables, inicio"><span class="brand-mark" aria-hidden="true">{v}</span><span>Mi Historia<br><strong>en Variables</strong></span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#misiones">Misiones</a><a href="#bitacora">Tu bitácora</a><a href="#guia">Guía rápida</a>
+      </nav>
+      <a class="header-link" href="#mision-1">Entrar a la aventura <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <h1>Mi Historia en Variables</h1>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LABORATORIO DE HISTORIAS · AVENTURA 01</p>
+          <h1 id="hero-title">Una historia.<br>Muchas <span>variables.</span></h1>
+          <p class="hero-lead">Tu personaje tiene un nombre, una edad y algo que lo hace único. Descubrí cómo la programación guarda cada parte de su historia.</p>
+          <div class="hero-actions"><a class="button button-dark" href="#mision-1">Crear mi personaje <span aria-hidden="true">→</span></a><a class="text-link" href="#como-jugar">¿Cómo se juega? <span aria-hidden="true">↓</span></a></div>
+          <ul class="hero-facts" aria-label="Datos de la aventura"><li><strong>03</strong> misiones</li><li><strong>30-40</strong> minutos aprox.</li><li><strong>01</strong> historia propia</li></ul>
+        </div>
+        <div class="character-scene">
+          <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+          <span class="scene-star star-one" aria-hidden="true">✦</span><span class="scene-star star-two" aria-hidden="true">✧</span>
+          <p class="scene-caption">ARCHIVO DE PERSONAJE <span>001</span></p>
+          <img class="character" src="imagenes/personaje.svg" width="380" height="380" alt="Lúa, una exploradora robótica violeta con una pequeña mochila y un brote verde en la cabeza.">
+          <div class="data-tag tag-name"><span>nombre</span><code>"Lúa"</code><i aria-hidden="true">TEXTO</i></div>
+          <div class="data-tag tag-age"><span>edad</span><code>13</code><i aria-hidden="true">NÚMERO</i></div>
+          <div class="data-tag tag-skill"><span>puedeExplorar</span><code>verdadero</code><i aria-hidden="true">LÓGICO</i></div>
+          <p class="scene-footnote"><span aria-hidden="true">✳</span> Cada dato cuenta una parte de su historia.</p>
+        </div>
+      </div>
+    </section>
 
-    <p>
-        En esta aventura vas a crear tu propio personaje.
-        Cada característica que agregues será un dato que la computadora
-        necesitará guardar en algún lugar.
-    </p>
+    <section class="intro-strip" id="como-jugar" aria-labelledby="intro-title">
+      <div class="container intro-grid"><p class="eyebrow">TU MISIÓN GENERAL</p><div><h2 id="intro-title">El Archivo de Historias necesita tu ayuda.</h2><p>Sus personajes perdieron sus fichas. Como <strong>Guardián o Guardiana de los Datos</strong>, vas a reconstruir una: elegí un dato, dale un nombre y descubrí cómo puede cambiar.</p></div><p class="intro-note"><span aria-hidden="true">↳</span> Solo necesitás curiosidad<br>y una hoja para tu bitácora.</p></div>
+    </section>
 
-    <p>
-        A esos lugares donde guardamos información los llamamos
-        <strong>variables</strong>.
-    </p>
+    <section class="missions-overview section-space" id="misiones" aria-labelledby="missions-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">EL MAPA DE TU AVENTURA</p><h2 id="missions-title">Tres pasos. Un mundo por crear.</h2></div><p>Avanzá a tu ritmo.<br>Volver a intentarlo también es aprender.</p></div>
+        <ol class="mission-map">
+          <li><a class="map-card map-violet" href="#mision-1"><span class="map-top"><span class="map-number">01</span><span class="pill">IDENTIDAD</span></span><h3>Creá tu personaje</h3><p>Descubrí cómo se guarda un dato.</p><span class="map-bottom">Insignia: Primera variable <span aria-hidden="true">↗</span></span></a></li>
+          <li><a class="map-card map-green" href="#mision-2"><span class="map-top"><span class="map-number">02</span><span class="pill">HABILIDADES</span></span><h3>Dale un poder propio</h3><p>Elegí qué tipo de dato necesitás.</p><span class="map-bottom">Insignia: Creador de habilidades <span aria-hidden="true">↗</span></span></a></li>
+          <li><a class="map-card map-peach" href="#mision-3"><span class="map-top"><span class="map-number">03</span><span class="pill">TRANSFORMACIÓN</span></span><h3>La historia cambia</h3><p>Actualizá el valor de una variable.</p><span class="map-bottom">Insignia: Guardián del cambio <span aria-hidden="true">↗</span></span></a></li>
+        </ol>
+      </div>
+    </section>
 
-    <h2>Misiones</h2>
+    <div class="container learning-layout">
+      <aside class="journey-nav" aria-label="Recorrido de aprendizaje">
+        <p class="eyebrow">TU RECORRIDO</p>
+        <a href="#mision-1"><span>01</span> Identidad</a><a href="#mision-2"><span>02</span> Habilidades</a><a href="#mision-3"><span>03</span> Transformación</a>
+        <div class="side-note"><span aria-hidden="true">{ }</span><p><strong>Una idea para llevarte</strong>Una variable tiene un nombre y guarda un valor. Ese valor puede cambiar.</p></div>
+        <a class="small-link" href="#bitacora">Abrir mi bitácora <span aria-hidden="true">↗</span></a>
+      </aside>
 
-    <ul>
-        <li>Misión 1: Creá tu personaje</li>
-        <li>Misión 2: Añadí habilidades</li>
-        <li>Misión 3: Cumpleaños del personaje</li>
-    </ul>
+      <div class="mission-content">
+        <section class="mission" id="mision-1" aria-labelledby="m1-title">
+          <div class="mission-kicker"><span class="mission-number">01</span><p>MISIÓN 1 <span>· 10 minutos aprox.</span></p></div>
+          <h2 id="m1-title">Primero, alguien a quien contar.</h2>
+          <p class="mission-intro">Encontraste una ficha vacía en el Archivo. Inventá un personaje y guardá sus primeros datos: <strong>nombre, edad y un gusto</strong>.</p>
+          <div class="concept-box"><span class="mini-label">NUEVO DESCUBRIMIENTO</span><h3>Una variable es un lugar para guardar un dato.</h3><p>Su <strong>nombre</strong> nos ayuda a encontrarlo. Su <strong>valor</strong> es la información que contiene en ese momento.</p><div class="variable-anatomy"><span><small>NOMBRE</small><code>nombre</code></span><b aria-label="recibe el valor">←</b><span><small>VALOR</small><code>"Lúa"</code></span></div></div>
+          <div class="example-grid"><div><span class="mini-label">LA FICHA DE LÚA</span><h3>Conocé a tu compañera de viaje.</h3><p>Lúa tiene 13 años y le gusta dibujar mapas. Podemos representar sus datos así:</p><p class="caption">Pseudocódigo: un ejemplo para leer y pensar.</p></div><pre class="code-card" aria-label="Ejemplo de variables de Lúa"><code><span class="code-comment">// Datos del personaje</span>
+<span class="code-name">nombre</span> = <span class="code-string">"Lúa"</span>
+<span class="code-name">edad</span> = <span class="code-number">13</span>
+<span class="code-name">gusto</span> = <span class="code-string">"dibujar mapas"</span></code></pre></div>
+          <div class="task-box"><span class="task-label">AHORA VOS <span aria-hidden="true">↗</span></span><h3>Abrí tu bitácora e inventá una identidad.</h3><ol><li>Escribí un nombre, una edad y un gusto para tu personaje.</li><li>Para cada dato, anotá el nombre de la variable y su valor.</li><li>Explicá con tus palabras la diferencia entre ambos.</li></ol><p class="task-example"><strong>Ejemplo:</strong> la variable <code>nombre</code> guarda el valor <code>"Lúa"</code>. Podés inventar todos los datos; no uses información personal real.</p></div>
+          <fieldset class="quick-check"><legend>Una pausa para pensar</legend><p>En <code>nombre = "Lúa"</code>, ¿cuál es el valor?</p><div class="answer"><input type="radio" name="check-1" id="m1-a"><label for="m1-a">nombre</label><p class="feedback feedback-retry">Ese es el nombre de la variable. Buscá el dato que está guardado. Podés elegir otra respuesta.</p></div><div class="answer"><input type="radio" name="check-1" id="m1-b"><label for="m1-b">"Lúa"</label><p class="feedback feedback-success">¡Exacto! "Lúa" es el valor; nombre es la variable que lo guarda.</p></div></fieldset>
+          <details class="hint"><summary>Necesito una pista <span aria-hidden="true">+</span></summary><p>Pensá en un cajón con etiqueta: <code>nombre</code> es la etiqueta y <code>"Lúa"</code> es lo que guardás adentro. La etiqueta y el contenido cumplen funciones distintas.</p></details>
+          <div class="mission-reward"><span class="reward-symbol" aria-hidden="true">✦</span><p><strong>Primera variable</strong>Tu logro: distinguir el nombre de una variable de su valor.</p><a href="#mision-2" aria-label="Continuar a la misión 2">Siguiente misión <span aria-hidden="true">→</span></a></div>
+        </section>
 
-    <br>
+        <section class="mission" id="mision-2" aria-labelledby="m2-title">
+          <div class="mission-kicker"><span class="mission-number green">02</span><p>MISIÓN 2 <span>· 10 minutos aprox.</span></p></div>
+          <h2 id="m2-title">Toda historia tiene un talento.</h2>
+          <p class="mission-intro">El Archivo encontró una nueva casilla: <strong>habilidad</strong>. ¿Qué sabe hacer tu personaje? El tipo de dato que elijas depende de lo que quieras contar.</p>
+          <div class="type-grid"><article><span class="type-icon" aria-hidden="true">Aa</span><h3>Texto</h3><p>Para nombres, gustos o habilidades.</p><code>"leer mapas"</code></article><article><span class="type-icon" aria-hidden="true">13</span><h3>Número</h3><p>Para cantidades y edades.</p><code>13</code></article><article><span class="type-icon" aria-hidden="true">✓</span><h3>Lógico</h3><p>Para algo verdadero o falso.</p><code>verdadero</code></article></div>
+          <div class="example-grid"><div><span class="mini-label">LA NUEVA HABILIDAD</span><h3>Lúa sabe leer mapas.</h3><p>Podemos guardar qué habilidad tiene como texto y si puede explorar como un dato lógico.</p></div><pre class="code-card" aria-label="Ejemplo de habilidad y dato lógico"><code><span class="code-name">habilidad</span> = <span class="code-string">"leer mapas"</span>
+<span class="code-name">puedeExplorar</span> = <span class="code-bool">verdadero</span></code></pre></div>
+          <div class="task-box"><span class="task-label">AHORA VOS <span aria-hidden="true">↗</span></span><h3>Sumale una habilidad a tu personaje.</h3><ol><li>Creá la variable <code>habilidad</code> y asignale un texto.</li><li>Inventá una pregunta que se responda con verdadero o falso.</li><li>Escribí una variable para esa respuesta y justificá su tipo.</li></ol><p class="task-example"><strong>Prestá atención:</strong> <code>13</code> es un número; <code>"13"</code> es texto. Las comillas cambian cómo representamos el dato en estos ejemplos.</p></div>
+          <fieldset class="quick-check"><legend>Elegí el dato que cuenta tu idea</legend><p>Querés guardar si tu personaje puede volar. ¿Qué tipo elegirías?</p><div class="answer"><input type="radio" name="check-2" id="m2-a"><label for="m2-a">Número</label><p class="feedback feedback-retry">Un número sirve para una cantidad. Acá buscamos responder verdadero o falso.</p></div><div class="answer"><input type="radio" name="check-2" id="m2-b"><label for="m2-b">Lógico</label><p class="feedback feedback-success">¡Bien pensado! puedeVolar puede guardar verdadero o falso.</p></div><div class="answer"><input type="radio" name="check-2" id="m2-c"><label for="m2-c">Texto</label><p class="feedback feedback-retry">Un texto podría describir su vuelo. Para indicar si puede volar, usamos un dato lógico.</p></div></fieldset>
+          <details class="hint"><summary>Necesito una pista <span aria-hidden="true">+</span></summary><p>Preguntate qué querés guardar: una descripción usa texto; una cantidad usa un número; una condición que se cumple o no usa un dato lógico.</p></details>
+          <div class="mission-reward"><span class="reward-symbol green" aria-hidden="true">✳</span><p><strong>Creador de habilidades</strong>Tu logro: elegir un tipo de dato según la información.</p><a href="#mision-3" aria-label="Continuar a la misión 3">Siguiente misión <span aria-hidden="true">→</span></a></div>
+        </section>
 
-    <h2>Misión 1: Creá tu personaje</h2>
+        <section class="mission" id="mision-3" aria-labelledby="m3-title">
+          <div class="mission-kicker"><span class="mission-number peach">03</span><p>MISIÓN 3 <span>· 10 minutos aprox.</span></p></div>
+          <h2 id="m3-title">Un cumpleaños lo cambia todo.<br><span class="muted">Bueno, casi todo.</span></h2>
+          <p class="mission-intro">Hoy Lúa cumple años. Su nombre y su habilidad siguen iguales, pero su edad cambia. Para continuar su historia, hay que <strong>actualizar un valor</strong>.</p>
+          <div class="birthday-demo"><div><span class="mini-label">ANTES DEL CUMPLEAÑOS</span><p><code>edad</code><strong>13</strong><span>años</span></p></div><span class="birthday-arrow" aria-label="pasa a">→</span><div><span class="mini-label">DESPUÉS DEL CUMPLEAÑOS</span><p><code>edad</code><strong>14</strong><span>años</span></p></div></div>
+          <div class="concept-box compact"><h3>Misma variable. Nuevo valor.</h3><p>La variable sigue llamándose <code>edad</code>. Reemplazamos el valor <code>13</code> por <code>14</code>. En una actualización simple como esta, conserva un valor actual, no los dos a la vez.</p></div>
+          <div class="task-box"><span class="task-label">AHORA VOS <span aria-hidden="true">↗</span></span><h3>Escribí el próximo capítulo.</h3><ol><li>Dibujá la ficha de tu personaje antes y después de cumplir años.</li><li>Actualizá la edad y dejá iguales los otros datos.</li><li>Completá: “Cambió el valor de ___; antes era ___ y ahora es ___”.</li></ol><p class="task-example"><strong>Desafío extra:</strong> tu personaje aprende otra habilidad. ¿Qué variable actualizarías? ¿De qué tipo seguiría siendo su valor?</p></div>
+          <fieldset class="quick-check"><legend>Antes de cerrar el Archivo</legend><p>Si actualizamos <code>edad</code> de 13 a 14, ¿qué cambia?</p><div class="answer"><input type="radio" name="check-3" id="m3-a"><label for="m3-a">El nombre de la variable</label><p class="feedback feedback-retry">La etiqueta edad se mantiene. Revisá qué información había adentro y cuál hay ahora.</p></div><div class="answer"><input type="radio" name="check-3" id="m3-b"><label for="m3-b">El valor que guarda</label><p class="feedback feedback-success">¡Misión comprendida! La variable edad ahora guarda 14. Su nombre sigue siendo edad.</p></div></fieldset>
+          <details class="hint"><summary>Necesito una pista <span aria-hidden="true">+</span></summary><p>En el cajón que dice edad, sacás la tarjeta 13 y ponés la tarjeta 14. No necesitás cambiar la etiqueta del cajón.</p></details>
+          <div class="mission-reward"><span class="reward-symbol peach" aria-hidden="true">↻</span><p><strong>Guardián del cambio</strong>Tu logro: explicar cómo se actualiza una variable.</p><a href="#bitacora">Ir a mi bitácora <span aria-hidden="true">→</span></a></div>
+        </section>
+      </div>
+    </div>
 
-    <p>
-        Vas a construir un personaje poco a poco.
-        Su nombre, su edad, sus gustos y sus habilidades
-        son datos que deben guardarse.
-    </p>
+    <section class="logbook section-space" id="bitacora" aria-labelledby="logbook-title"><div class="container logbook-grid"><div><p class="eyebrow">TU HISTORIA, EN UNA FICHA</p><h2 id="logbook-title">Tu bitácora de<br>descubrimientos.</h2><p>Reuní en una hoja los datos de tu personaje y tus respuestas. Elegí tus logros cuando puedas explicar cada idea.</p><p class="logbook-note">Estas marcas son una autoevaluación de práctica: no suman puntos ni se guardan al cerrar o recargar la página.</p><a class="text-link" href="documentos/Diseno_Mi_Historia_en_Variables_Sprint2.pdf" download>Documento de diseño · PDF <span aria-hidden="true">↓</span></a></div><div class="logbook-sheet"><div class="sheet-top"><span>ARCHIVO PERSONAL</span><span aria-hidden="true">✦</span></div><h3>Mi personaje está listo si…</h3><label><input type="checkbox"><span><strong>Primera variable</strong>Distingo el nombre y el valor de una variable.</span></label><label><input type="checkbox"><span><strong>Creador de habilidades</strong>Elijo entre texto, número y lógico.</span></label><label><input type="checkbox"><span><strong>Guardián del cambio</strong>Explico qué dato cambió y por qué.</span></label><div class="reflection"><span class="mini-label">PREGUNTA FINAL</span><p>¿Qué dato de tu personaje podría cambiar en una próxima aventura?</p></div></div></div></section>
 
-    <img src="imagenes/personaje.png"
-        alt="Ejemplo"
-        width="250">
-
-    <h3>Video de ayuda</h3>
-
-    <p>Video</p>
-
-    <br>
-
-    <h2>Misión 2: Añadí habilidades a tu personaje</h2>
-
-    <p>
-        Tu personaje ya tiene algunos datos.
-        Ahora agregale una habilidad.
-    </p>
-
-    <br>
-
-    <h2>Misión 3: Cumpleaños del personaje</h2>
-
-    <p>
-        Tu personaje está de cumpleaños.
-        Durante este evento uno de sus datos va a cambiar.
-    </p>
-
-    <h3>Situación</h3>
-
-    <p>Antes del cumpleaños:</p>
-
-    <p>
-        <strong>edad → 13</strong>
-    </p>
-
-    <p>Después del cumpleaños:</p>
-
-    <p>
-        <strong>edad → 14</strong>
-    </p>
-
+    <section class="guide section-space" id="guia" aria-labelledby="guide-title"><div class="container guide-grid"><div><p class="eyebrow">PARA CONSULTAR CUANDO QUIERAS</p><h2 id="guide-title">Una pequeña guía.<br>Grandes ideas.</h2><p>Las tres ideas que te acompañan en cualquier programa.</p></div><div class="guide-questions"><details open><summary>¿Qué es una variable? <span aria-hidden="true">+</span></summary><p>Es un lugar identificado por un nombre donde un programa puede guardar un valor. Nos permite recordar y usar información.</p></details><details><summary>¿Nombre y valor son lo mismo? <span aria-hidden="true">+</span></summary><p>No. En <code>edad = 13</code>, edad es el nombre que identifica la variable y 13 es el valor guardado. El nombre nos permite referirnos al dato.</p></details><details><summary>¿Todos los datos son iguales? <span aria-hidden="true">+</span></summary><p>No. En esta aventura usamos texto, números y valores lógicos. Elegimos el tipo según la información: un nombre, una cantidad o una condición.</p></details><details><summary>¿Qué pasa cuando un dato cambia? <span aria-hidden="true">+</span></summary><p>Podemos actualizar el valor de la variable. Por ejemplo, edad pasa de 13 a 14 después del cumpleaños. En este ejemplo su nombre se mantiene.</p></details><details><summary>¿Cómo uso esta aventura en clase? <span aria-hidden="true">+</span></summary><p>Leé cada misión, trabajá en tu hoja y probá las preguntas de repaso. Podés hacerlo solo o en pareja, sin reloj obligatorio. Compartí tu ficha con tu docente y explicá tus decisiones.</p></details></div></div></section>
+    <section class="closing"><div class="container"><span aria-hidden="true">{ tu próxima idea }</span><h2>Las historias cambian.<br>Ahora sabés cómo guardar ese cambio.</h2><a class="button button-light" href="#inicio">Volver al comienzo <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><p><strong>Mi Historia en Variables</strong><span>Objeto de aprendizaje · Programación inicial</span></p><p>Damián · Sprint 2<span>Prototipo educativo con HTML y CSS · 2026</span></p></div></footer>
 </body>
-
 </html>
