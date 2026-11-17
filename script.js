@@ -60,6 +60,12 @@ form.addEventListener("submit", (event) => {
   document.querySelector("#result-name").textContent = character.name;
   document.querySelector("#result-age").textContent = formatAge(character.age);
   document.querySelector("#result-color").textContent = character.color.label;
+  document.querySelector("#character-code").textContent = [
+    `let nombre = ${JSON.stringify(character.name)};`,
+    `let edad = ${character.age};`,
+    `let color = ${JSON.stringify(character.color.label.toLowerCase())};`,
+  ].join("\n");
+  document.querySelector("#variables-example").hidden = false;
   portrait.style.setProperty("--portrait", character.color.background);
 
   for (const shape of illustration.querySelectorAll("[data-tone]")) {

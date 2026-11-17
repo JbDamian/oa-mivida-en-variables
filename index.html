@@ -19,7 +19,14 @@
 
   <main class="wrap">
     <h1>Creá tu personaje</h1>
-    <p class="intro">Completá tres datos. Cada uno se guarda en una variable.</p>
+    <p class="intro">Completá tres datos para crear tu personaje.</p>
+
+    <section class="variable-intro" aria-labelledby="variables-title">
+      <h2 id="variables-title">¿Cómo se guardan los datos?</h2>
+      <p>Una <strong>variable</strong> guarda un dato y tiene un nombre para identificarlo.
+        Al presionar <strong>Crear personaje</strong>, la página toma lo que completaste y lo usa
+        para armar la ficha. Por ejemplo, la variable <code>nombre</code> puede guardar el valor <code>"Lúa"</code>.</p>
+    </section>
 
     <noscript><p>Activá JavaScript para crear el personaje y descargar su ficha.</p></noscript>
     <form id="character-form" class="form-card">
@@ -104,6 +111,15 @@
           <p class="download-error" id="download-error" role="status"></p>
         </div>
       </div>
+
+      <section id="variables-example" class="variables-example" aria-labelledby="code-title" hidden>
+        <h3 id="code-title">Tus datos en JavaScript</h3>
+        <p>Así se representan tus datos en JavaScript.</p>
+        <pre><code id="character-code"></code></pre>
+        <p><code>let</code> crea una variable y <code>=</code> le asigna un valor.
+          El nombre y el color son textos y llevan comillas. La edad es un número.</p>
+        <p>Probá cambiar un dato y presioná <strong>Crear personaje</strong> otra vez para ver el cambio.</p>
+      </section>
     </section>
   </main>
 </body>
